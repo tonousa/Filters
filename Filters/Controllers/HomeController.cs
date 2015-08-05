@@ -31,5 +31,13 @@ namespace Filters.Controllers
                 throw new ArgumentOutOfRangeException("id", id, "");
             }
         }
+
+        //[CustomAction]
+        [ProfileAction]
+        [ProfileResult]
+        public string FilterTest()
+        {
+            return "This is the filtertest action";
+        }
     }
 }
